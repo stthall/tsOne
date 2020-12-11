@@ -1,16 +1,23 @@
 .row{
+  @mixin clearfix;
   &--no-b-margin{
     margin-bottom:1rem;
-    @media atMedium{
-      margin-bottom:0;
-    }
+  }
+  &--gutters {
+    margin-right:-65px;
+  }
+  &--gutters-large{
+    margin-right:-100px;
+  }
+  &--gutters > div{
+    padding-right:65px;
+  }
+  &--gutters-large > div{
+    padding-right:100px;
   }
   @mixin atMedium{
-    &--gutters > div {
-      padding-right:65px;
-    }
-    &--gutters > div:last-child{
-      padding-right:0;
+    &--no-b-margin{
+      margin-bottom:0;
     }
     &__medium-4{
       float:left;
@@ -18,6 +25,10 @@
     }
     &__medium-4--larger{
       width: 37%;
+    }
+    &__medium-6{
+      float:left;
+      width:50%;
     }
     &__medium-8{
       float:left;
@@ -27,5 +38,4 @@
       width:63%;
     }
   }
-  @mixin clearfix;
 }

@@ -6,6 +6,9 @@ img {
   max-width:100%;
   height:auto;
 }
+picture img{
+  min-width:100%;
+}
 * {
   box-sizing:border-box;
 }

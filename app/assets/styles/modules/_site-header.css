@@ -95,6 +95,7 @@
     @mixin atMedium{
       display:block;
       padding-top:0;
+      opacity:1;
     }
     &--is-visible{
       opacity:1;

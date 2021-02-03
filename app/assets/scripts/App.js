@@ -1,4 +1,5 @@
 if(module.hot){ module.hot.accept() }
+import 'lazysizes'
 import '../styles/styles.css'
 import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
